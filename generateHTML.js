@@ -170,6 +170,7 @@ const colors = {
               zoom: .75; 
             } 
            }
-        </style>`
-          }
-  
+        </style>
+          }`
+
+        }
