@@ -3,6 +3,7 @@ const axios = require("axios");
 const fs = require("fs");
 const pdf = require("html-pdf");
 const generateHTML = require("./generateHTML.js")
+
 const questions = [
 
 ];
@@ -52,14 +53,14 @@ function init() {
                     }
          writeToFile("profile.txt", JSON.stringify(neededinfo));
 
-                let pdfinfo = generateHTML(neededinfo)
-                pdf.create(pdfinfo).toFile('', function (err, res) {
+                let pdfinfo = generateHTML(neededinfo) 
+                pdf.create(pdfinfo).toFile('/generateHTML.pdf', function (err, res) {
                  if (err) return console.log(err);
-                 console.log(res); fileName: '/generateHTML.pdf' 
+                 console.log(res); { filename: '/generateHTML.pdf' }
                 });               
                 })
-
-        })
+            });
+        
 
 }
 
