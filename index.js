@@ -55,7 +55,7 @@ function init() {
                 let pdfinfo = generateHTML(neededinfo)
                 pdf.create(pdfinfo).toFile('', function (err, res) {
                  if (err) return console.log(err);
-                 console.log(res); {'/generateHTML.pdf' }
+                 console.log(res); fileName: '/generateHTML.pdf' 
                 });               
                 })
 
