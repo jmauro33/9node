@@ -174,3 +174,4 @@ const colors = {
           }`
 
         }
+        module.exports = generateHTML

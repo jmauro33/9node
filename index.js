@@ -1,12 +1,12 @@
 const inquirer = require("inquirer");
 const axios = require("axios");
 const fs = require("fs");
-const pdf = require("html-pdf");
+const convertFactory = require('electron-html-to');
+
 const generateHTML = require("./generateHTML.js")
-
-const questions = [
-
-];
+const pdfWriter = convertFactory({
+    converterPath: convertFactory.converters.PDF
+});
 
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function (err) {
@@ -48,21 +48,29 @@ function init() {
                         git_stars: github.data.git_stars,
                         following: github.data.following,
                         html_url: github.data.html_url,
-                        blog: github.data.blog
-
+                        blog: github.data.blog,
+                        color: response.color
                     }
-         writeToFile("profile.txt", JSON.stringify(neededinfo));
 
-                let pdfinfo = generateHTML(neededinfo) 
-                pdf.create(pdfinfo).toFile('/generateHTML.pdf', function (err, res) {
-                 if (err) return console.log(err);
-                 console.log(res); {filename: '/generateHTML.pdf'}
-                });               
+                    let html = generateHTML(neededinfo)
+
+                    pdfWriter({ html }, function (err, result) {
+                        if (err) {
+                            // failing here... electron timeout
+                            return console.error(err);
+                        }
+
+                        result.stream.pipe(fs.createWriteStream('./profile.pdf'));
+                        pdfWriter.kill();
+                    });
                 })
-            });
-        
-
+        });
 }
+
+
+
+
+
 
 
 
