@@ -2,7 +2,6 @@ const inquirer = require("inquirer");
 const axios = require("axios");
 const fs = require("fs");
 const convertFactory = require('electron-html-to');
-
 const generateHTML = require("./generateHTML.js")
 const pdfWriter = convertFactory({
     converterPath: convertFactory.converters.PDF
@@ -66,11 +65,6 @@ function init() {
                 })
         });
 }
-
-
-
-
-
 
 
 
