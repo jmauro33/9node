@@ -56,7 +56,7 @@ function init() {
 
                     pdfWriter({ html }, function (err, result) {
                         if (err) {
-                            // failing here... electron timeout
+                           
                             return console.error(err);
                         }
 
@@ -73,18 +73,6 @@ function init() {
 
 
 
-
-//* Profile image
-//* User name
-// * Links to the following:
-//   * User location via Google Maps
-//   * User GitHub profile
-//   * User blog
-// * User bio
-// * Number of public repositories
-// * Number of followers
-// * Number of GitHub stars
-// * Number of users following
 
 
 
