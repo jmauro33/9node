@@ -29,13 +29,14 @@ const colors = {
     return `<!DOCTYPE html>
     
   <html lang="en">
-     <head>
+     
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
         <link href="https://fonts.googleapis.com/css?family=BioRhyme|Cabin&display=swap" rel="stylesheet">
         <title>Document</title>
+     <head>   
         <style>
             @page {
               margin: 0;
@@ -172,9 +173,73 @@ const colors = {
             } 
            }
         </style>
-          }`
-        
+      
+      </head>
+      <body>
+
+       
+
+      <div class="main">
+      
+      <h1>My Profile</h1>
+      
+      </div>
+     
+
+      <div class="links-nav">
+
+           <h3>Linkedin</h3>
 
 
-        }
+      </div>
+
+
+      <div class="photo-header">
+           
+
+      </div>
+      <div class="photo-header img">
+           <h1>My photo</h1>
+      </div>
+
+     
+      <div class="container">
+
+           <div class="row">
+            <div class="card">
+                <p>My Repositories</p>
+
+            </div>
+            
+            <div class="card">
+            <p>My followers</p>
+
+        </div>
+
+
+
+
+
+
+
+           </div>
+
+
+
+
+
+
+      </div>
+      
+
+
+
+
+
+
+
+      </body>
+      </html>
+
+        ` }
         module.exports = generateHTML
