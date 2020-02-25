@@ -181,14 +181,21 @@ const colors = {
 
       <div class="main">
       
-      <h1>My Profile</h1>
-      
+      <h1>Jonathan Mauro</h1>
+      <p> I am a newbie to software development, i have a strong passion for sports </p>
       </div>
      
 
       <div class="links-nav">
+        <div class="nav-link">
+           <p>Linkedin</p>
+        </div>
+        <div class="nav-link">
+        <p>github</p>
+     </div>
 
-           <h3>Linkedin</h3>
+
+
 
 
       </div>
@@ -197,22 +204,29 @@ const colors = {
       <div class="photo-header">
            
 
-      </div>
-      <div class="photo-header img">
-           <h1>My photo</h1>
+          
+       <div id="photo-header img">
+          
+       </div>
+
       </div>
 
-     
       <div class="container">
 
            <div class="row">
             <div class="card">
                 <p>My Repositories</p>
-
             </div>
             
             <div class="card">
             <p>My followers</p>
+            </div>
+            
+            <div class="card">
+            <p>My Stars</p>
+            </div>
+
+
 
         </div>
 
