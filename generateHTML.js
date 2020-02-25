@@ -191,10 +191,10 @@ function generateHTML(data) {
                 <p>Linkedin</p>
               </div>
               <div class="nav-link">
-              <p>github</p>
-            </div>
+                <p>github</p>
+              </div>
 
-          </div>
+            </div>
 
 
           <div class="photo-header">
@@ -209,17 +209,17 @@ function generateHTML(data) {
 
             <div class="row">
                 <div class="card">
-                    <p>My Repositories</p>
+                  <p>My Repositories</p>
                 </div>
                 
                 <div class="card">
-                <p>My followers</p>
+                  <p>My followers</p>
                 </div>
                 
                 <div class="card">
-                <p>My Stars</p>
+                   <p>My Stars</p>
                 </div>
-
+                
             </div>
           
 
@@ -227,11 +227,6 @@ function generateHTML(data) {
           </div>
           
         </div>
-
-
-
-
-
 
       </body>
       </html>
