@@ -1,32 +1,32 @@
 const colors = {
-    green: {
-      wrapperBackground: "#E6E1C3",
-      headerBackground: "#C1C72C",
-      headerColor: "black",
-      photoBorderColor: "#black"
-    },
-    blue: {
-      wrapperBackground: "#5F64D3",
-      headerBackground: "#26175A",
-      headerColor: "white",
-      photoBorderColor: "#73448C"
-    },
-    pink: {
-      wrapperBackground: "#879CDF",
-      headerBackground: "#FF8374",
-      headerColor: "white",
-      photoBorderColor: "#FEE24C"
-    },
-    red: {
-      wrapperBackground: "#DE9967",
-      headerBackground: "#870603",
-      headerColor: "white",
-      photoBorderColor: "white"
-    }
-  };
-  
-  function generateHTML(data) {
-    return `<!DOCTYPE html>
+  green: {
+    wrapperBackground: "#E6E1C3",
+    headerBackground: "#C1C72C",
+    headerColor: "black",
+    photoBorderColor: "#black"
+  },
+  blue: {
+    wrapperBackground: "#5F64D3",
+    headerBackground: "#26175A",
+    headerColor: "white",
+    photoBorderColor: "#73448C"
+  },
+  pink: {
+    wrapperBackground: "#879CDF",
+    headerBackground: "#FF8374",
+    headerColor: "white",
+    photoBorderColor: "#FEE24C"
+  },
+  red: {
+    wrapperBackground: "#DE9967",
+    headerBackground: "#870603",
+    headerColor: "white",
+    photoBorderColor: "white"
+  }
+};
+
+function generateHTML(data) {
+  return `<!DOCTYPE html>
     
   <html lang="en">
      
@@ -177,75 +177,56 @@ const colors = {
       </head>
       <body>
 
-       
+        <div class="wrapper">
 
-      <div class="main">
-      
-      <h1>Jonathan Mauro</h1>
-      <p> I am a newbie to software development, i have a strong passion for sports </p>
-      </div>
-     
-
-      <div class="links-nav">
-        <div class="nav-link">
-           <p>Linkedin</p>
-        </div>
-        <div class="nav-link">
-        <p>github</p>
-     </div>
-
-
-
-
-
-      </div>
-
-
-      <div class="photo-header">
-           
-
+          <div class="main">
           
-       <div id="photo-header img">
+           <h1>Jonathan Mauro</h1>
+              <p> I am a newbie to software development, i have a strong passion for sports </p>
+          </div>
+        
+
+            <div class="links-nav">
+              <div class="nav-link">
+                <p>Linkedin</p>
+              </div>
+              <div class="nav-link">
+              <p>github</p>
+            </div>
+
+          </div>
+
+
+          <div class="photo-header">
+              
+          <div id="photo-header img">
+              
+          </div>
+
+          </div>
+
+          <div class="container">
+
+            <div class="row">
+                <div class="card">
+                    <p>My Repositories</p>
+                </div>
+                
+                <div class="card">
+                <p>My followers</p>
+                </div>
+                
+                <div class="card">
+                <p>My Stars</p>
+                </div>
+
+            </div>
           
-       </div>
-
-      </div>
-
-      <div class="container">
-
-           <div class="row">
-            <div class="card">
-                <p>My Repositories</p>
-            </div>
-            
-            <div class="card">
-            <p>My followers</p>
-            </div>
-            
-            <div class="card">
-            <p>My Stars</p>
-            </div>
 
 
-
+          </div>
+          
         </div>
-
-
-
-
-
-
-
-           </div>
-
-
-
-
-
-
-      </div>
-      
-
 
 
 
@@ -256,4 +237,4 @@ const colors = {
       </html>
 
         ` }
-        module.exports = generateHTML
+module.exports = generateHTML
