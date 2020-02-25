@@ -185,6 +185,14 @@ function generateHTML(data) {
               <p> I am a newbie to software development, i have a strong passion for sports </p>
           </div>
         
+          <div class="photo-header">   
+
+            <div id="photo-header img">
+                  
+            </div>
+            
+          </div>
+
 
           <div class="links-nav">
 
@@ -199,11 +207,7 @@ function generateHTML(data) {
           </div>
 
 
-          <div class="photo-header">   
-            <div class="photo-header img">
-       
-            </div>
-          </div>
+          
 
           <div class="container">
 
