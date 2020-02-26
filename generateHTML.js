@@ -181,57 +181,56 @@ function generateHTML(data) {
 
           <div class="main">
           
-           <h1>Jonathan Mauro</h1>
-              <p> I am a newbie to software development, i have a strong passion for sports </p>
-          </div>
-        
-          <div class="photo-header">   
-
-            <div id="photo-header img">
-                  
-            </div>
-            
-          </div>
-
-
-          <div class="links-nav">
-
-              <div class="nav-link">
-                <p>Linkedin</p>
-              </div>
-
-              <div class="nav-link">
-                <p>github</p>
-              </div>
-
-          </div>
-
-
           
+            <div class="photo-header">   
+
+              <div id="photo-header img">
+                    
+              
+                  <h1>Jonathan Mauro</h1>
+                    <p> I am a newbie to software development, i have a strong passion for sports </p>
+                
+                  <div class="links-nav">
+
+                        <div class="nav-link">
+                          <p>Linkedin</p>
+                        </div>
+
+                        <div class="nav-link">
+                          <p>github</p>
+                        </div>
+
+                        <div class="nav-link">
+                          <p>jonathanmauro16@yahoo.com</p>
+                        </div>
+                  </div>
+                </div>
+             </div>
 
           <div class="container">
 
             <div class="row">
                 <div class="card">
                   <p>My Repositories</p>
+                  <p>13</p>
                 </div>
                 
                 <div class="card">
                   <p>My followings</p>
+                  <p>0</p>
                 </div>
 
                 <div class="card">
                   <p>My followers</p>
+                  <p>0</p>
                 </div>
 
                 <div class="card">
                    <p>My Stars</p>
+                   <p>0</p>
                 </div>
-
             </div>
-          
           </div>
-          
         </div>
 
       </body>
