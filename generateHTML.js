@@ -187,7 +187,7 @@ function generateHTML(data) {
               <div id="photo-header img">
                     
               
-                  <h1>Jonathan Mauro</h1>
+                  <h1>Hello My Name is Jonathan Mauro</h1>
                     <p> I am a newbie to software development, i have a strong passion for sports </p>
                 
                   <div class="links-nav">
