@@ -187,8 +187,8 @@ function generateHTML(data) {
               <div id="photo-header img">
                     
               
-                  <h1>Hello My Name is Jonathan Mauro</h1>
-                    <p> I am a newbie to software development, i have a strong passion for sports </p>
+                  <h1>${data.bio}</h1>
+                    <p>${data.bio} </p>
                 
                   <div class="links-nav">
 
@@ -212,22 +212,22 @@ function generateHTML(data) {
             <div class="row">
                 <div class="card">
                   <p>My Repositories</p>
-                  <p>13</p>
+                  <p>${data.public_repos}</p>
                 </div>
                 
                 <div class="card">
                   <p>My followings</p>
-                  <p>0</p>
+                  <p>${data.followings}</p>
                 </div>
 
                 <div class="card">
                   <p>My followers</p>
-                  <p>0</p>
+                  <p>${data.followers}</p>
                 </div>
 
                 <div class="card">
                    <p>My Stars</p>
-                   <p>0</p>
+                   <p>${data.git_stars}</p>
                 </div>
             </div>
           </div>
